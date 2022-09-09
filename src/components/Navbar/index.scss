@@ -1,0 +1,104 @@
+.nav-bar {
+    background: url(../../assets/images/nav_deco.png) right no-repeat;
+    background-size: auto 65px;
+    background-position: right;
+    background-color: #2f3739;
+    border-bottom: 5px #27282d;
+    border-style: none none solid none;
+    display: flex;
+    align-items: left;
+    position: fixed;
+    width: 100%;
+    height: 67px;
+    padding: 0rem 0rem;
+    margin: 0;
+    z-index: 3;
+    overflow: visible;
+    
+
+        //Nav Logo    
+        .logo {
+            position: relative;
+            margin-left: 150px;
+            max-width: 100%;
+            margin-top: -85px;
+        }
+        .logo-hover {
+            position: absolute;
+            margin-top: 25px;
+            margin-left: 25px;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            object-fit: contain;
+            opacity: 0;
+            transition: opacity .2s;
+
+                &:hover {
+                    opacity: 1;
+                }
+        }
+
+        // .figure:hover img.logo-hover {
+        //     opacity: 1;
+        // }
+
+    //HOME ABOUT US CONTACT 
+    nav {
+        order: 2;
+        text-align: center;
+        height: auto;
+        margin-top: 10px;
+        text-decoration: none;
+        list-style-type: none;
+        margin: 0;
+        margin-left: auto;
+    }
+        //individual Elements
+        a {
+            font-size: 22px;
+            color: #2f3739;
+            display: inline-block;
+            line-height: 15px;
+            padding: 25px;
+            height: 20px;
+            text-decoration: none;
+
+            &:hover{
+                color: #ffffff;
+            }
+        }
+        
+    //Socials
+    ul {
+        display: inline-block;
+        list-style-type: none;
+        float: none;
+        text-align: left;
+        margin: 0;
+        min-width: 20px;
+        list-style-type: none;
+    
+        li{
+            //individual elements
+            a{
+            
+                padding: 25px 0;
+                font-size: 22px;
+                line-height: 10px;
+                
+                svg{
+
+                    &:hover {
+                    color:#dda132;
+
+                }
+                }
+            }
+        }
+}
+
+}
+
+
