@@ -1,12 +1,12 @@
 .preview-container{
     height: 1000px;
-    background-image: url(./../../../assets/images/grass_background.png);
+    background-image: url('./../../../assets/images/grass_background.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
 .preview-wrapper{
     display: flex;
-    flex-wrap: column;
+    justify-content: center;
     height: 80%;
 
 }

@@ -1,5 +1,5 @@
 import './index.scss'
-import ImageGallaryComponent from './Reusable/image-gallery.component'
+import Carousel from './Reusable/image-gallery.component'
 
 const Preview = () => {
   return (
@@ -18,7 +18,7 @@ const Preview = () => {
           <img src={Wood} alt="wood" /> */}
         </div>
         <div className="preview-hero"></div>
-        <ImageGallaryComponent />
+        <Carousel />
       </div>
     </div>
   )

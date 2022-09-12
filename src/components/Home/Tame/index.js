@@ -14,28 +14,28 @@ const Tame = () => {
             <img src={TameDragon} alt="Tame-dragon" />
           </div>
         </div>
-      </div>
-      <div className="Tame-right-column">
-        <div className="Tame-icons">
-          <ul>
-            <img src={Radish} alt="Radish" />
-            <img src={IceCube} alt="IceCube" />
-            <img src={Pepper} alt="Pepper" />
-          </ul>
-        </div>
-        <div className="Tame-card">
-          <img src={CardNormal} alt="Card-right" />
+        <div className="Tame-right-column">
+          <div className="Tame-icons">
+            <ul>
+              <img src={Radish} alt="Radish" />
+              <img src={IceCube} alt="IceCube" />
+              <img src={Pepper} alt="Pepper" />
+            </ul>
+          </div>
+          <div className="Tame-card">
+            <img src={CardNormal} alt="Card-right" />
 
-          <h1>Tame Dragons!</h1>
-          <div className="text-body">
-            <p>
-              Impress a wild dragon to invite them to live with you!
+            <h1>Tame Dragons!</h1>
+            <div className="text-body">
               <p>
-                While they will feed themselves if you tend to their needs and
-                become friends they might just lay eggs!
+                Impress a wild dragon to invite them to live with you!
+                <p>
+                  While they will feed themselves if you tend to their needs and
+                  become friends they might just lay eggs!
+                </p>
+                <p>Create a big happy family, or keep it small, up to you!</p>
               </p>
-              <p>Create a big happy family, or keep it small, up to you!</p>
-            </p>
+            </div>
           </div>
         </div>
       </div>

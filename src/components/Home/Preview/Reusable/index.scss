@@ -1,9 +1,47 @@
-.carousel .thumb img {
-    width: 100% !important;
-    height: 100% !important;
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
 }
 
-.carousel .slide img {
-    max-height: 50%;  /* change this to whatever you want */
-    width: 50%;
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: opacity .04s ease-in-out;
+}
+
+button#next {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+}
+button#prev {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+}
+
+.slide.current {
+    opacity: 1;
+}
+// Slide Images
+.slide:first-child{
+    background: url('./image-1.png') no-repeat center center/cover;
+}
+.slide:nth-child(2){
+    background: url('./image-2.png') no-repeat center top/cover;
+}
+.slide:nth-child(3){
+    background: url('./image-3.png') no-repeat center top/cover;
+}
+.slide:nth-child(4){
+    background: url('./image-1.png') no-repeat center top/cover;
+}
+.slide:nth-child(5){
+    background: url('./image-1.png') no-repeat center top/cover;
 }

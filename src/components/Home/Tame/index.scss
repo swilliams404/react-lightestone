@@ -25,11 +25,10 @@
 .Tame-wrapper {
     padding-top: 90px;
     display: flex;
+    gap: 5em;
+}
 
-}
-.Tame-left-column{
-    padding-right: 90px;
-}
+
 .Tame-content{
     display: block;
     justify-content: center;
@@ -45,26 +44,18 @@
     }
 
 
-
-.Tame-right-column{
-    padding-top: 80px;
-    
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    
-}
-
 .Tame-icons{
     display: flex;
+    justify-content: center;
         img{
-            margin-left: 40px;
+            
+            margin-right: 40px;
             margin-bottom: 10px;
             -webkit-filter: drop-shadow(8px 10px 1px #16071050);
             filter:         drop-shadow(8px 10px 1px #16071050);
             
+        }
     }
-}
 
 .Tame-card {
     display: flex;
@@ -105,3 +96,129 @@
     }
 }
 
+    @media (max-width: 70em){
+
+        .container-Tame {
+            position: relative;
+            height: 1000px;
+            display: flex;
+            justify-content: center;
+            
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: -40px;
+                    left: 0;
+                    width: 100%;
+                    height: calc(100% + 60px);
+                    clip-path: polygon(0% 0%, 100% 5%, 100% 100%, 0% 100%);
+                    background-image:
+                    linear-gradient(to left, #02002425 1%, #ffffff00 15%),
+                    linear-gradient(to right, #02002425 1%, #ffffff00 15%),
+                    url(./../../../assets/images/Tame-background.png);
+                        
+    
+                }
+    
+    }
+        .Tame-wrapper {
+            flex-direction: column;
+            padding-top: 60px;
+            flex-basis: auto;
+            gap: 5em;
+            }
+        
+            .Tame-content{
+            padding: 0;
+            text-align: center;
+            -webkit-box-flex: 1;
+            -moz-box-flex: 1;
+            box-flex: 1;
+            -webkit-flex: 1 1 auto;
+            flex: 1 1 auto; 
+            padding: 10px;
+            margin: 10px;
+            
+            
+            img{
+                max-width: 100%;
+                // flex: 1;
+            }
+
+        }
+
+        .Tame-left-column{
+            order: 2;
+        }
+    }
+
+    @media (max-width: 600px){
+        .container-Tame {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+        }
+
+        .Tame-wrapper {
+            flex-direction: column;
+            padding-top: 60px;
+            flex-basis: auto;
+            gap: 0em;
+            }
+
+
+        .Tame-card {
+            display: flex;
+            text-align: left;
+            flex-direction: column;
+            -webkit-box-flex: 1;
+            -moz-box-flex: 1;
+            box-flex: 1;
+            -webkit-flex: 1 1 auto;
+            flex: 1 1 auto; 
+            padding: 10px;
+            margin: 10px;
+        
+            
+                img{
+                    flex: 0 0 auto;
+                    max-width: 100%;
+                    -webkit-filter: drop-shadow(10px 13px 1px #16071050);
+                    filter:         drop-shadow(10px 13px 1px #16071050);
+        
+                }
+                h1{
+                    margin-top: 15px;
+                    position: absolute;
+                    padding-left: 10px;
+                    font-size: 36px;
+                    font-size: 6vw;
+                    font-stretch: 1;
+                    max-width: 100%;
+                    font-family:'ViceCitySans' ;
+                    color: #691630;
+            
+                }
+                .text-body{
+                    flex-direction: column;
+                    // gap: 2em;
+                    position: absolute;
+                    margin-left: 50px;
+                    padding-left: 0rem;
+                    margin-top: 60px;
+                    width: 80%;
+                    text-align: left;
+                p{
+                    font-family: 'ViceCitySans';
+                    color: #691630;
+                    font-size: 18px;
+                    font-size: 3vw;
+                    width: 100%;
+                    
+                    
+                    
+            }
+        }
+    }
+}

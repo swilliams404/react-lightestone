@@ -1,5 +1,7 @@
-.page {
+
+.body {
     height: 100%;
+    overflow-x: hidden;
     background:
     linear-gradient(to left,#ffffff00, #02002425 ),
     linear-gradient(to right, #ffffff00 , #02002425 );
