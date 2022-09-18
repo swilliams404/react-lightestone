@@ -4,7 +4,6 @@ import {
   faDiscord,
   faTwitch,
   faTwitter,
-  faYoutube,
 } from '@fortawesome/free-brands-svg-icons'
 import LogoL from '../../assets/images/Logo_Temp.png'
 import LogoLY from '../../assets/images/Logo_Temp_Highlighted.png'
@@ -16,11 +15,10 @@ const Navbar = () => {
 
   const handleNavExpanded = () => setIsNavExpanded(!isNavExpanded)
 
-  // document.addEventListener('click', function handleClickOutsideBox(event) {
-  //   let value = document.getElementById('primary-header').className
-  //   const nav = document.getElementById('box')
+  // document.addEventListener('click', function handleNavExpanded(event) {
+  //   const nav = document.querySelector('expanded primary-header')
   //   if (!nav.contains(event.target)) {
-  //     className = 'primary-header'
+  //     handleNavExpanded
   //   }
   // })
 
@@ -56,6 +54,7 @@ const Navbar = () => {
               exact="true"
               activeclassname="active"
               className="home-link"
+              onClick={handleNavExpanded}
               to="/"
             >
               HOME
@@ -64,6 +63,7 @@ const Navbar = () => {
               exact="true"
               activeclassname="active"
               className="about-link"
+              onClick={handleNavExpanded}
               to="/About"
             >
               ABOUT
@@ -72,6 +72,7 @@ const Navbar = () => {
               exact="true"
               activeclassname="active"
               className="contact-link"
+              onClick={handleNavExpanded}
               to="/Contact"
             >
               CONTACT

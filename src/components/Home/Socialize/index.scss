@@ -152,6 +152,39 @@
 }
 
 @media (max-width: 40rem){
+
+    .socialize-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        height: 100rem;
+        // border-bottom: 10px #27282d;
+        // border-style: none none solid none;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: -35px;
+                    width: 100%;
+                    height: calc(100% + 50px);
+                    background: 
+                    linear-gradient(to left, #02002425 1%, #ffffff00 15%),
+                    linear-gradient(to right, #02002425 1%, #ffffff00 15%),
+                    url('./../../../assets//images/cloud_background.png');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    clip-path: polygon(0% 5%, 100% 0%, 100% 100%, 0% 100%);
+                    border-bottom: 10px #27282d;
+                    border-style: none none solid none;
+        }
+    
+    }
+
+    .socialize-wrapper {
+        display: flex;
+        padding-top: 90px;
+        gap: 0rem;
+    }
+
     .socialize-card {
         display: flex;
         text-align: left;

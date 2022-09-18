@@ -4,6 +4,7 @@ import Customize from './Customize'
 import Tame from './Tame'
 import Socialize from './Socialize'
 import Preview from './Preview'
+import Twitch from './Twitch'
 
 const Home = () => {
   return (
@@ -25,6 +26,9 @@ const Home = () => {
       </div>
       <div>
         <Preview />
+      </div>
+      <div>
+        <Twitch />
       </div>
     </div>
   )

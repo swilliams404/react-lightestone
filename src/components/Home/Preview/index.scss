@@ -1,6 +1,9 @@
 .preview-container{
-    height: 1000px;
-    background-image: url('./../../../assets/images/grass_background.png');
+    height: 110rem;
+    background:
+    linear-gradient(to left, #02002425 1%, #ffffff00 15%),
+    linear-gradient(to right, #02002425 1%, #ffffff00 15%), 
+    url('./../../../assets/images/grass_background.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -8,7 +11,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 80%;
 
 }
 
@@ -70,14 +72,26 @@
         gap: 2rem;
 }
 .preview-hero{
-    display: flex;
-    width: 100rem;
-    height: 100rem;
-    margin: 0;
+
+    align-items: center;
+    justify-content: center;
+    width: 80rem auto;
+    height: 60rem;
+    margin: 0rem auto;
+
 }
 
-@media (max-width: 70em){
 
+@media (max-width: 70em){
+    .preview-container{
+        height: 110rem;
+        background:
+        linear-gradient(to left, #02002425 1%, #ffffff00 15%),
+        linear-gradient(to right, #02002425 1%, #ffffff00 15%), 
+        url('./../../../assets/images/grass_background.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
     .preview-card-container{
         display: flex;
         flex-direction: column;
@@ -91,6 +105,21 @@
         .preview-card{
         display: flex;
         justify-content: center;
+        
+        img{
+            flex: 0 0 auto;
+            max-width: 100%;
+            -webkit-filter: drop-shadow(10px 13px 1px #16071050);
+            filter:         drop-shadow(10px 13px 1px #16071050);
+
+        }
+
+}
+.preview-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // height: 80%;
 
 }
 
@@ -106,14 +135,47 @@
 }
 
 }
+.preview-hero{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50rem;
+    // margin: 1rem;
+    // padding: 1rem;
+}
 
 @media (max-width: 40rem){
+    .preview-container{
+        height: 100rem;
+        background:
+        linear-gradient(to left, #02002425 1%, #ffffff00 15%),
+        linear-gradient(to right, #02002425 1%, #ffffff00 15%), 
+        url('./../../../assets/images/grass_background.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .preview-hero{
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 1rem;
+        padding: 1rem;
+
+    }
+    .preview-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // height: 80%;
+    
+    }
     .preview-card-container{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 2rem;
+        gap: 6rem;
+        height: 100%;
         padding: 1rem;
         margin: 1rem;
         margin-top: 4rem;
@@ -122,7 +184,6 @@
         .preview-card{
             display: flex;
             justify-content: center;
-
             img{
                 flex: 0 0 auto;
                 max-width: 100%;
@@ -153,7 +214,7 @@
             p{
                 font-family: 'ViceCitySans';
                 color: #691630;
-                font-size: 1.6rem;
+                font-size: 1.4rem;
                 // font-size: 3vw;
                 width: 100%;
                 
@@ -164,3 +225,4 @@
     }
     }
 }
+
